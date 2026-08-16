@@ -7,6 +7,8 @@ btn.addEventListener('click', function(button){
 				fnd.value = ''
 	else if(button.target.value =='='){
 		fnd.value = eval(fnd.value)
+		if(eval(fnd.value) == undefined)
+			fnd.value = ''
 		temp = fnd.value;
 	}
 	else if(button.target.value =='ans')
